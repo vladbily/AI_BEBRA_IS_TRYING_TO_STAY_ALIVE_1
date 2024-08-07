@@ -43,7 +43,7 @@ class Game:
             self.anim_bg -= 5
 
         else:
-            self.screen.blit(self.bg, (0, 0))
+            self.screen.blit(self.bg, (0, -100))
             for pipe in self.pipe_group:
                 pipe.draw(self.screen)
                 pipe.update(0)
